@@ -4,8 +4,7 @@ SCRIPT_REPO="https://github.com/breakfastquay/rubberband.git"
 SCRIPT_COMMIT="e4296ac80b1170018a110bc326fd0d45a0eb27d6"
 
 ffbuild_enabled() {
-    [[ $VARIANT == lgpl* ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
