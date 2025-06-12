@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/zapping-vbi/zvbi"
 SCRIPT_COMMIT="5169a428d51c3ae8ff7b0897e8a687d8e05e37b5"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
