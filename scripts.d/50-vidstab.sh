@@ -4,8 +4,7 @@ SCRIPT_REPO="https://github.com/georgmartius/vid.stab.git"
 SCRIPT_COMMIT="d5a313ade2d7dccb5b1d06ed9779fbafeb65f2be"
 
 ffbuild_enabled() {
-    [[ $VARIANT == lgpl* ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
