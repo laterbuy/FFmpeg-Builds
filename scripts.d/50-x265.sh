@@ -4,8 +4,7 @@ SCRIPT_REPO="https://bitbucket.org/multicoreware/x265_git.git"
 SCRIPT_COMMIT="1e993ee88063103904867ced35f7fcfc8e0748cf"
 
 ffbuild_enabled() {
-    [[ $VARIANT == lgpl* ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerdl() {
