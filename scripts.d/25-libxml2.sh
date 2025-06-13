@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/GNOME/libxml2.git"
 SCRIPT_COMMIT="f428bdd1d9eb71b192dc31c5eb789097c67e5132"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
