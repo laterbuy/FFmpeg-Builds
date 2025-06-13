@@ -3,7 +3,7 @@
 SCRIPT_SKIP="1"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerdl() {
