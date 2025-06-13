@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/Netflix/vmaf.git"
 SCRIPT_COMMIT="b9ac69e6c4231fad0465021f9e31a841a18261db"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
