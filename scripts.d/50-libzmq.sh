@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/zeromq/libzmq.git"
 SCRIPT_COMMIT="c2f7f8ae12720f48e97dc7d719da73cdab77e450"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
