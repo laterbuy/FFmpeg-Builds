@@ -5,7 +5,7 @@ SCRIPT_COMMIT="f6aac9a44d407369dbcbfe10ffdba1bab13859f0"
 
 ffbuild_enabled() {
     [[ $TARGET == winarm64 ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerstage() {
