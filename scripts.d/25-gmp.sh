@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/BtbN/gmplib.git"
 SCRIPT_COMMIT="655b673c0c825a772b2596d9761ffc3dd953074e"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
