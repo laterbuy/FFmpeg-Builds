@@ -5,7 +5,7 @@ SCRIPT_COMMIT="00a1009a78434bbc43a1efc54f5915dd466706a4"
 
 ffbuild_enabled() {
     (( $(ffbuild_ffver) > 600 )) || return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerdl() {
