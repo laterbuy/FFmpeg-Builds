@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/drobilla/serd.git"
 SCRIPT_COMMIT="bac0a5b491de3f628af715ad37c8aaa502a2b681"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
