@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/mm2/Little-CMS.git"
 SCRIPT_COMMIT="7d0d7ac2b16b6ceddb10abfda4bbb1194ebd8a41"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
