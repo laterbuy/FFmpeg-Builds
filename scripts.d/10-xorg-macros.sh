@@ -4,8 +4,7 @@ SCRIPT_REPO="https://gitlab.freedesktop.org/xorg/util/macros.git"
 SCRIPT_COMMIT="a9d71e3fd8e6758b70be31c586921bbbcd2a8449"
 
 ffbuild_enabled() {
-    [[ $TARGET != linux* ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerlayer() {
