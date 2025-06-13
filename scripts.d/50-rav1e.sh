@@ -4,8 +4,7 @@ SCRIPT_REPO="https://github.com/xiph/rav1e.git"
 SCRIPT_COMMIT="c95438d23e4f70b289e9c01aa2eb191215c38fb6"
 
 ffbuild_enabled() {
-    [[ $TARGET == win32 ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
