@@ -4,10 +4,7 @@ SCRIPT_REPO="https://github.com/kcat/openal-soft.git"
 SCRIPT_COMMIT="b71d4a11c699eaabf59858a4f3211c92da14c977"
 
 ffbuild_enabled() {
-    [[ $ADDINS_STR == *4.4* ]] && return -1
-    [[ $ADDINS_STR == *5.0* ]] && return -1
-    [[ $ADDINS_STR == *5.1* ]] && return -1
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
