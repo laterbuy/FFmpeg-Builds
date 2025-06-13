@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/xiph/vorbis.git"
 SCRIPT_COMMIT="84c023699cdf023a32fa4ded32019f194afcdad0"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
