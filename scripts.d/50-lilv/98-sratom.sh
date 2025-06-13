@@ -4,7 +4,7 @@ SCRIPT_REPO="https://github.com/lv2/sratom.git"
 SCRIPT_COMMIT="41f14e51def0a562d556a950d8cc36f15e480f7b"
 
 ffbuild_enabled() {
-    return 0
+    return -1
 }
 
 ffbuild_dockerbuild() {
