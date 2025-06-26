@@ -1,4 +1,4 @@
-FF_CONFIGURE=" --disable-everything --disabled-shared --enable-static --enable-encoder=h264_* --enable-libx264 --enable-encoder=libx264 --enable-swscale --enable-pthreads --enable-libvpl --enable-amf --enable-encoder=aac --enable-gpl --enable-version3 --disable-debug"
+FF_CONFIGURE=" --disable-everything --disable-shared --enable-static --enable-encoder=h264_* --enable-libx264 --enable-encoder=libx264 --enable-swscale --enable-pthreads --enable-libvpl --enable-amf --enable-encoder=aac --enable-gpl --enable-version3 --disable-debug"
 FF_CFLAGS=""
 FF_CXXFLAGS=""
 FF_LDFLAGS=""
