@@ -35,10 +35,43 @@ cat <<EOF >"$BUILD_SCRIPT"
     git clone --filter=blob:none --branch='$GIT_BRANCH' '$FFMPEG_REPO' ffmpeg
     cd ffmpeg
 
-    ./configure --prefix=/ffbuild/prefix --pkg-config-flags="--static" \$FFBUILD_TARGET_FLAGS \$FF_CONFIGURE \
-        --extra-cflags="\$FF_CFLAGS" --extra-cxxflags="\$FF_CXXFLAGS" --extra-libs="\$FF_LIBS" \
-        --extra-ldflags="\$FF_LDFLAGS" --extra-ldexeflags="\$FF_LDEXEFLAGS" \
-        --cc="\$CC" --cxx="\$CXX" --ar="\$AR" --ranlib="\$RANLIB" --nm="\$NM" \
+    ./configure --prefix=/ffbuild/prefix --pkg-config-flags="--static" \\
+        \$FFBUILD_TARGET_FLAGS \\
+        --enable-gpl \\
+        --enable-version3 \\
+        --disable-everything \\
+        --enable-shared \\
+        --disable-static \\
+        --enable-avcodec \\
+        --enable-avformat \\
+        --enable-avutil \\
+        --enable-swscale \\
+        --enable-libx264 \\
+        --enable-libx265 \\
+        --enable-encoder=libx264 \\
+        --enable-encoder=libx265 \\
+        --enable-decoder=h264 \\
+        --enable-decoder=hevc \\
+        --enable-libvpl \\
+        --enable-encoder=hevc_qsv \\
+        --enable-encoder=h264_qsv \\
+        --enable-decoder=h264_qsv \\
+        --enable-decoder=hevc_qsv \\
+        --enable-nvenc \\
+        --enable-encoder=hevc_nvenc \\
+        --enable-encoder=h264_nvenc \\
+        --enable-decoder=h264_cuvid \\
+        --enable-decoder=hevc_cuvid \\
+        --enable-amf \\
+        --enable-encoder=hevc_amf \\
+        --enable-encoder=h264_amf \\
+        --enable-decoder=h264_amf \\
+        --enable-decoder=hevc_amf \\
+        --enable-encoder=aac \\
+        --enable-decoder=aac \\
+        --extra-cflags="\$FF_CFLAGS" --extra-cxxflags="\$FF_CXXFLAGS" --extra-libs="\$FF_LIBS" \\
+        --extra-ldflags="\$FF_LDFLAGS" --extra-ldexeflags="\$FF_LDEXEFLAGS" \\
+        --cc="\$CC" --cxx="\$CXX" --ar="\$AR" --ranlib="\$RANLIB" --nm="\$NM" \\
         --extra-version="\$(date +%Y%m%d)"
     make -j\$(nproc) V=1
     make install install-doc
