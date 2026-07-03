@@ -69,6 +69,41 @@ cat <<EOF >"$BUILD_SCRIPT"
         --enable-decoder=hevc_amf \\
         --enable-encoder=aac \\
         --enable-decoder=aac \\
+         --enable-avdevice \\
+        --enable-avfilter \\
+        --enable-swresample \\
+        --enable-d3d11va \\
+        --enable-indev=dshow \\
+        --enable-indev=gdigrab \\
+        --enable-filter=gfxcapture \\
+        --enable-filter=buffersink \\
+        --enable-filter=hwdownload \\
+        --enable-filter=format \\
+        --enable-filter=scale \\
+        --enable-encoder=h264_mf \\
+        --enable-decoder=pcm_s16le \\
+        --enable-decoder=pcm_f32le \\
+        --enable-decoder=pcm_s24le \\
+        --enable-decoder=pcm_s32le \\
+        --enable-muxer=h264 \\
+        --enable-muxer=adts \\
+        --enable-muxer=flv \\
+        --enable-muxer=rtsp \\
+        --enable-muxer=rtp \\
+        --enable-demuxer=rtsp \\
+        --enable-demuxer=rtp \\
+        --enable-demuxer=live_flv \\
+        --enable-parser=h264 \\
+        --enable-parser=hevc \\
+        --enable-parser=aac \\
+        --enable-protocol=file \\
+        --enable-protocol=rtmp \\
+        --enable-protocol=tcp \\
+        --enable-protocol=udp \\
+        --enable-muxer=whip \\
+        --enable-openssl \\
+        --enable-protocol=http \\
+        --enable-protocol=https \\
         --extra-cflags="\$FF_CFLAGS" --extra-cxxflags="\$FF_CXXFLAGS" --extra-libs="\$FF_LIBS" \\
         --extra-ldflags="\$FF_LDFLAGS" --extra-ldexeflags="\$FF_LDEXEFLAGS" \\
         --cc="\$CC" --cxx="\$CXX" --ar="\$AR" --ranlib="\$RANLIB" --nm="\$NM" \\
